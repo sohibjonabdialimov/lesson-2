@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
+import React, { memo, useContext } from "react";
 import { TrendingContext } from "../../context/Context";
 import { v4 } from "uuid";
 import "./style.css";
 
 const Asosiy = () => {
   let trending = useContext(TrendingContext);
-  console.log("trendshdhdhhdh", trending);
   return (
     <>
       {trending && (
@@ -35,4 +34,4 @@ const Asosiy = () => {
   );
 };
 
-export default Asosiy;
+export default memo(Asosiy);

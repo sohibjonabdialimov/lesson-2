@@ -54,3 +54,11 @@
   font-weight: 600;
   border-radius: 25px;
 }
+.channel_about_commit button{
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.channel_about_commit button ion-icon{
+  color: #555;
+}
