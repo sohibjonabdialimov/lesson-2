@@ -1,0 +1,53 @@
+.main_content {
+  display: flex;
+}
+main {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+main::-webkit-scrollbar {
+  width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+main::-webkit-scrollbar-thumb {
+  height: 80px;
+  border-radius: 15px;
+  background: #555;
+}
+nav {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  color: #606060;
+  font-size: 18px;
+  display: block;
+  font-weight: 700;
+  font-weight: 500;
+  padding: 0 30px 10px 30px;
+  border-bottom: 4px solid #fff;
+}
+nav a.active {
+  border-bottom: 4px solid #555;
+  color: #333;
+}
+nav ion-icon {
+  color: #606060;
+  padding: 0 30px 10px 30px;
+  border-bottom: 4px solid #fff;
+}
+
+.padding{
+  padding-left: 80px;
+  padding-right: 80px;
+}

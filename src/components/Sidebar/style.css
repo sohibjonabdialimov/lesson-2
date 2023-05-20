@@ -1,0 +1,52 @@
+.sidebar {
+  width: 19vw;
+}
+.sidebar_nav {
+  overflow-y: scroll;
+  max-height: calc(100vh - 66px);
+}
+.sidebar_nav::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar_nav::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.sidebar_nav::-webkit-scrollbar-thumb {
+  height: 50px;
+  border-radius: 15px;
+  background: #fff;
+}
+.sidebar:hover .sidebar_nav::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+.side_main_navbar{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.small_nav_item{
+  padding: 0 10px;
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.small_nav_item:hover{
+  background-color: #ccc;
+}
+.small_nav_item ion-icon{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.small_nav_item p{
+  font-size: 12px;
+}
+.side_main_navbar h3{
+  padding: 10px 12px 10px 12px;
+  font-size: 19px;
+  font-weight: 500;
+}
+

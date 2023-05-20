@@ -1,0 +1,16 @@
+.side_nav{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-radius: 10px;
+}
+.side_nav ion-icon{
+  font-size: 25px;
+}
+.side_nav:hover{
+  background-color: #f3f3f3;
+}
+.side_nav p{
+  font-size: 15px;
+}

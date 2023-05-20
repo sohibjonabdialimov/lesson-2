@@ -1,112 +1,27 @@
-import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
-import Card from "./components/Card/Card";
-import { v4 } from "uuid";
-import img1 from "./img/76729750.jpg";
-import img2 from "./img/user2.jpg";
-import img3 from "./img/user3.webp";
-import img4 from "./img/user4.jpg";
-
+import Glavniy from "./Glavniy";
+import Asosiy from "./pages/Asosiy/Asosiy";
+import Video from "./pages/Video/Video";
+import Shorts from "./pages/Shorts/Shorts";
+import Playlist from "./pages/Playlist/Playlist";
+import Xabarlar from "./pages/Xabarlar/Xabarlar";
+import Kanal from "./pages/Kanal/Kanal";
+import KanalHaqida from "./pages/KanalHaqida/KanalHaqida";
 const App = () => {
-  
-  let obj = [
-    {
-      id: v4(),
-      name: "Dennis Beatty",
-      img: img1,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Axad Qayum",
-      img: img2,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Lill Xurram",
-      img: img3,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Jasur Umirov",
-      img: img4,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Dennis Beatty",
-      img: img1,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Axad Qayum",
-      img: img2,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Lill Xurram",
-      img: img3,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Jasur Umirov",
-      img: img4,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Dennis Beatty",
-      img: img1,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Axad Qayum",
-      img: img2,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Lill Xurram",
-      img: img3,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-    {
-      id: v4(),
-      name: "Jasur Umirov",
-      img: img4,
-      email: "Nimadur@gmail.com",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit harum adipisci deserunt excepturi fugit quas at voluptate voluptas accusamus aliquam.",
-    },
-  ]
-
-  const [arr, setArr] = useState([...obj]);
   return (
-  <>
-    <Routes>
-      <Route path="home" element={<Home arr={arr}  />}>
-        <Route path=":id" element={<Card arr={arr} />} />
-      </Route>
-    </Routes>
-  </>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<Glavniy />}>
+          <Route index element={<Asosiy />} />
+          <Route path="video" element={<Video />} />
+          <Route path="shorts" element={<Shorts />} />
+          <Route path="playlist" element={<Playlist />} />
+          <Route path="Xabarlar" element={<Xabarlar />} />
+          <Route path="kanal" element={<Kanal />} />
+          <Route path="kanalhaqida" element={<KanalHaqida />} />
+        </Route>
+      </Routes>
+    </>
+  );
 };
-
 export default App;

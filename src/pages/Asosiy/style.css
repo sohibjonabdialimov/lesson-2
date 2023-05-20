@@ -1,0 +1,50 @@
+.asosiy_cards{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 25px;
+  color: #666;
+}
+.asosiy_card img{
+  width: 100%;
+  border-radius: 10px;
+  height: 120px;
+}
+.asosiy_card {
+  position: relative;
+}
+.asosiy_card h4{
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.asosiy_card p{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.asosiy_card span{
+  position: absolute;
+  padding: 3px 2px;
+  font-size: 14px;
+  background-color: #222;
+  border-radius: 5px;
+  color: #fff;
+  bottom: 50%;
+  right: 8px;
+}
+.apple_logo{
+  display: flex;
+  align-items: center;
+  color: #666;
+  gap: 5px;
+}
+.apple_logo p{
+  margin-bottom: 0;
+}
+.apple_logo ion-icon{
+  display: block;
+  font-size: 18px;
+  color: #666;
+}

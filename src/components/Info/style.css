@@ -1,0 +1,56 @@
+.channel_info{
+  padding: 10px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.channel_content{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  color: #5A5A5A;
+}
+.channel_content img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.channel_desc h2{
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.channel_desc_link{
+  display: flex;
+  gap: 15px;
+  color: #5A5A5A;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.channel_desc_link p{
+  color: #4f4e4e;
+}
+.channel_bold{
+  color: #545353;
+  font-weight: 700;
+}
+.channel_about_commit{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.channel_about_commit ion-icon{
+  font-weight: 400;
+  font-size: 25px;
+}
+.podpiska_btn{
+  margin-top: 20px;
+}
+.podpiska_btn button{
+  background-color: #222;
+  color: #fff;
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+}
