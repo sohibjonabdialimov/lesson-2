@@ -8,16 +8,16 @@ import Info from "./components/Info/Info";
 import { NavContext } from "./context/NavContext";
 
 const Glavniy = () => {
-  let nav = useContext(NavContext);
+  let {nav} = useContext(NavContext);
   return (
     <>
       <Header />
-      <div className="container">
+      <div className={nav && "container"}>
         <div className="main_content">
           <Sidebar />
           <main>
             <Aside />
-            <div className={nav && "padding"}>
+            <div className={!nav && "padding"}>
               <Info />
               <nav>
                 <NavLink to="/">Glavniy</NavLink>

@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
+import React, { memo, useContext } from 'react'
 import { AboutChannelContext } from '../../context/Context';
 import "./style.css";
 
 const Aside = () => {
   const data = useContext(AboutChannelContext);
-  console.log(data);
   return (
     <div className='aside'>
       {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQanGl0m-aX34uLTQ2OWQsKpoW7ZTzlkusyA&usqp=CAU" alt="" /> */}
@@ -13,4 +12,4 @@ const Aside = () => {
   )
 }
 
-export default Aside;
+export default memo(Aside);

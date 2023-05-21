@@ -5,6 +5,7 @@ main {
   width: 100%;
   overflow-y: scroll;
   max-height: 90vh;
+  margin-left: 10px;
 }
 
 main::-webkit-scrollbar {
@@ -27,6 +28,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
+  padding: 0 40px;
 }
 nav a {
   color: #606060;
@@ -46,8 +48,10 @@ nav ion-icon {
   padding: 0 30px 10px 30px;
   border-bottom: 4px solid #fff;
 }
-
+.main_section{
+  padding: 0 40px;
+}
 .padding{
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
 }

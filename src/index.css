@@ -29,3 +29,6 @@ ion-icon{
 img{
   object-fit: cover;
 }
+button, a{
+  cursor: pointer;
+}
