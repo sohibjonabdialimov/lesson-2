@@ -8,9 +8,9 @@ const EachSide = () => {
   return (
     <>
       {each && (
-        <section className={each ? "clickedSide sidebar" : "sidebar"}>
-          <div className="sidebar_nav">
-            <div className="side_main_navbar">
+        <section className={each ? "clickedSide each_side" : "each_side"}>
+          <div className="each_side_nav">
+            <div className="each_side_main_navbar">
               <Navbar
                 img={<ion-icon name="home-outline"></ion-icon>}
                 text="Glavniy"
