@@ -12,7 +12,7 @@ const Header = () => {
         <div className="container">
           <div className="header_content">
             <div className="logo">
-              <Button setNav={setNav} setEach={setEach} img={<ion-icon name="menu-outline"></ion-icon>} />
+              <Button type={'header'} img={<ion-icon name="menu-outline"></ion-icon>} />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
                 alt=""
