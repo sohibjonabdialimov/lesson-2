@@ -17,7 +17,7 @@ const Glavniy = () => {
           <Sidebar />
           <main>
             <Aside />
-            <div className={!nav && "padding"}>
+            <div className={!nav ? "padding" : null}>
               <Info />
               <nav>
                 <NavLink to="/">Glavniy</NavLink>

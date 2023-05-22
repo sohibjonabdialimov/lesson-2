@@ -1,0 +1,109 @@
+{
+  "kanallar": [
+    {
+      "id": 1,
+      "country": "Apple TV",
+      "obuna": "1.43 mln obunachi"
+    },
+    {
+      "id": 2,
+      "country": "Apple Polska",
+      "obuna": "5.37 mln obunachi"
+    },
+    {
+      "id": 3,
+      "country": "Apple Vietnam",
+      "obuna": "17.43 mln obunachi"
+    },
+    {
+      "id": 4,
+      "country": "Apple Canada",
+      "obuna": "18.43 mln obunachi"
+    },
+    {
+      "id": 5,
+      "country": "Apple Australia",
+      "obuna": "19.43 mln obunachi"
+    },
+    {
+      "id": 6,
+      "country": "Apple Japan",
+      "obuna": "78.43 mln obunachi"
+    },
+    {
+      "id": 7,
+      "country": "Apple Singapore",
+      "obuna": "17.43 mln obunachi"
+    },
+    {
+      "id": 8,
+      "country": "Apple UK",
+      "obuna": "45.66 mln obunachi"
+    },
+    {
+      "id": 9,
+      "country": "Apple Germaniya",
+      "obuna": "45.6 mln obunachi"
+    },
+    {
+      "id": 10,
+      "country": "Apple France",
+      "obuna": "12.3 mln obunachi"
+    },
+    {
+      "id": 11,
+      "country": "Apple Espana",
+      "obuna": "20.65 mln obunachi"
+    },
+    {
+      "id": 13,
+      "country": "Apple Italia",
+      "obuna": "20.6 mln obunachi"
+    },
+    {
+      "id": 14,
+      "country": "Apple India",
+      "obuna": "2.4 mln obunachi"
+    },
+    {
+      "id": 15,
+      "country": "Apple Turkie",
+      "obuna": "3.23 mln obunachi"
+    },
+    {
+      "id": 16,
+      "country": "Apple Rossiya",
+      "obuna": "47.6 mln obunachi"
+    },
+    {
+      "id": 17,
+      "country": "Apple UAE",
+      "obuna": "59.1 mln obunachi"
+    },
+    {
+      "id": 18,
+      "country": "Apple Mexico",
+      "obuna": "57.2 mln obunachi"
+    },
+    {
+      "id": 19,
+      "country": "Apple Brasil",
+      "obuna": "1.58 mln obunachi"
+    },
+    {
+      "id": 20,
+      "country": "Apple Colombia",
+      "obuna": "1.1 mln obunachi"
+    },
+    {
+      "id": 21,
+      "country": "Apple Chili",
+      "obuna": "68.5 mln obunachi"
+    },
+    {
+      "id": 22,
+      "country": "Apple Saudi Arabia",
+      "obuna": "97.8 mln obunachi"
+    }
+  ]
+}

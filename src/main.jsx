@@ -5,6 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import {
   AboutChannelProvider,
+  ChannelDataProvider,
   ChannelProvider,
   CommentsProvider,
   InfoProvider,
@@ -12,7 +13,7 @@ import {
   SearchProvider,
   TrendingProvider,
 } from "./context/Context.jsx";
-import { NavProvider } from "./context/NavContext.jsx";
+import { EachProvider, NavProvider } from "./context/NavContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -24,7 +25,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <PlaylistProvider>
                 <SearchProvider>
                   <NavProvider>
-                    <App />
+                    <ChannelDataProvider>
+                      <EachProvider>
+                        <App />
+                      </EachProvider>
+                    </ChannelDataProvider>
                   </NavProvider>
                 </SearchProvider>
               </PlaylistProvider>

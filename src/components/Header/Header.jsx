@@ -1,17 +1,18 @@
 import { useContext } from "react";
 import "./style.css";
 import Button from "../../UI/Button/Button";
-import { NavContext } from "../../context/NavContext";
+import { EachContext, NavContext } from "../../context/NavContext";
 
 const Header = () => {
   const {setNav} = useContext(NavContext);
+  const {setEach} = useContext(EachContext);
   return (
     <>
       <div className="header">
         <div className="container">
           <div className="header_content">
             <div className="logo">
-              <Button setNav={setNav} img={<ion-icon name="menu-outline"></ion-icon>} />
+              <Button setNav={setNav} setEach={setEach} img={<ion-icon name="menu-outline"></ion-icon>} />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
                 alt=""

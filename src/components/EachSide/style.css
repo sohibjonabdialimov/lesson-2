@@ -1,9 +1,29 @@
 .sidebar {
-  width: 19vw;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000aa;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  
+  /* transform: translateX(-120%); */
 }
 .sidebar_nav {
+  animation: anim 3s all;
+  width: 19vw;
+  background-color: #fff;
   overflow-y: scroll;
   max-height: calc(100vh - 66px);
+}
+@keyframes anim {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 .sidebar_nav::-webkit-scrollbar {
   width: 10px;
@@ -22,16 +42,16 @@
   background-color: #aaa;
 }
 
-.side_main_navbar{
+.side_main_navbar {
   padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid #ccc;
 }
 
-.small_nav{
+.small_nav {
   padding-left: 10px;
 }
-.small_nav_item{
+.small_nav_item {
   padding: 0 10px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -42,19 +62,22 @@
   border-radius: 15px;
   cursor: pointer;
 }
-.small_nav_item:hover{
+.small_nav_item:hover {
   background-color: #e9e9e9;
 }
-.small_nav_item ion-icon{
+.small_nav_item ion-icon {
   font-size: 25px;
   margin-bottom: 10px;
 }
-.small_nav_item p{
+.small_nav_item p {
   font-size: 12px;
 }
-.side_main_navbar h3{
+.side_main_navbar h3 {
   padding: 10px 12px 10px 12px;
   font-size: 19px;
   font-weight: 500;
 }
-
+.clickedSide {
+  display: block;
+  /* transform: translateX(0); */
+}

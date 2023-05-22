@@ -11,3 +11,16 @@ export const NavProvider = ({ children }) => {
     </NavContext.Provider>
   );
 };
+
+
+export const EachContext = createContext();
+
+export const EachProvider = ({ children }) => {
+  const [each, setEach] = useState(false);
+
+  return (
+    <EachContext.Provider value={{ each, setEach }}>
+      {children}
+    </EachContext.Provider>
+  );
+};

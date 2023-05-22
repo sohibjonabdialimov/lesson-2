@@ -1,0 +1,51 @@
+.kanallar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.kanallar {
+  padding: 15px 0;
+}
+.kanallar h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.kanalar_info {
+  display: grid;
+  padding: 30px 50px;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 80px;
+  row-gap: 25px;
+}
+.kanal_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.kanal_card h4{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.kanal_card p{
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+.kanal_card button{
+  background-color: #f3f2f2;
+  color: #222;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 20px;
+}
+.kanal_card button:hover{
+  background-color: #ddd;
+  
+}

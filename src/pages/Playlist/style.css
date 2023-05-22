@@ -13,6 +13,7 @@
 }
 .playlist_card {
   position: relative;
+  cursor: pointer;
 }
 .playlist_card h4{
   color: #022;
