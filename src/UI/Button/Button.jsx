@@ -9,13 +9,13 @@ const Button = ({ img, type }) => {
   const handleNav = () => {
     if (type === "header") {
       setNav((prev) => !prev);
+      setEach(true);
+    }
+    if (type === "user") {
+      navigate("/glavniy/glavniy");
     }
     if (type === "each") {
       setEach(false);
-    } else if (type === "user") {
-      navigate("/glavniy/glavniy");
-    } else {
-      setEach((prev) => true);
     }
   };
   return (

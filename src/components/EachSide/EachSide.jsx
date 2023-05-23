@@ -1,17 +1,23 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import Navbar from "../../UI/Navbar/Navbar";
 import "./style.css";
 import { EachContext } from "../../context/NavContext";
 import Button from "../../UI/Button/Button";
 import { NavLink } from "react-router-dom";
 const EachSide = () => {
+  const sectionRef = useRef();
   const { each, setEach } = useContext(EachContext);
-
+  const handleClick = (e) => {
+    if(e.target === sectionRef.current){
+      setEach(false)
+    }
+  }
   return (
     <>
       {each && (
         <section
-          onClick={() => setEach(false)}
+          ref={sectionRef}
+          onClick={(e) => handleClick(e)}
           className={each ? "each_side clickedSide" : "each_side"}
         >
           <div className="each_side_nav">
