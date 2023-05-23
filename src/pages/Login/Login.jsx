@@ -32,8 +32,8 @@ const Login = () => {
   return (
     <div className="login">
       <form onSubmit={(e) => onSubmitFunction(e)}>
-        <input ref={inputRef} type="text" name="" id="" />
-        <input ref={passwordRef} type="password" name="" id="" />
+        <input placeholder="Username" ref={inputRef} type="text" name="" id="" />
+        <input placeholder="Password" ref={passwordRef} type="password" name="" id="" />
         <button type="submit">SEND</button>
       </form>
     </div>
