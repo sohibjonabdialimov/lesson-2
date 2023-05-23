@@ -33,7 +33,7 @@ const Info = () => {
                 <p>
                   {aboutChannel?.description?.slice(0, 73)}...
                 </p>
-                <button onClick={() => navigate("/kanalhaqida")}>
+                <button onClick={() => navigate("/glavniy/kanalhaqida")}>
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
               </div>
