@@ -212,7 +212,7 @@ export const channelContext = createContext();
 export const ChannelDataProvider = ({ children }) => {
   const [channelData, setChannelData] = useState([]);
   useEffect(() => {
-    axios.get("/data.json")
+    axios.get("/src/data.json")
       .then((res) => {
         setChannelData(res);
       });

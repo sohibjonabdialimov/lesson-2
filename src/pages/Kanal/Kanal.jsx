@@ -4,7 +4,7 @@ import { AboutChannelContext, channelContext } from "../../context/Context";
 const Kanal = () => {
   let aboutChannel = useContext(AboutChannelContext);
   const channelData = useContext(channelContext);
-  // console.log("ddededwaed", channelData);
+  console.log(channelData);
   return (
     <>
       {channelData && (
