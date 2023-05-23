@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Glavniy from "./Glavniy";
 import Asosiy from "./pages/Asosiy/Asosiy";
 import Video from "./pages/Video/Video";
@@ -12,11 +12,24 @@ import Hero from "./pages/Hero/Hero";
 import About from "./pages/About/About";
 import Obunalar from "./pages/Obunalar/Obunalar";
 import Kutubxona from "./pages/Kutubxona/Kutubxona";
+import Login from "./pages/Login/Login";
+import { useEffect } from "react";
+
+
 const App = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if(JSON.parse(localStorage.getItem("token"))?.token){
+      navigate("/");
+    }else{
+      navigate("/login");
+    }
+  }, []);
   return (
     <>
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/login" element={<Login />} />
         <Route path="about" element={<About />} />
         <Route path="kutubxona" element={<Kutubxona />} />
         <Route path="obunalar" element={<Obunalar />} />

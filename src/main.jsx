@@ -14,6 +14,7 @@ import {
   TrendingProvider,
 } from "./context/Context.jsx";
 import { EachProvider, NavProvider } from "./context/NavContext.jsx";
+import { TokenProvider } from "./context/Token.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -27,7 +28,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                   <NavProvider>
                     <ChannelDataProvider>
                       <EachProvider>
-                        <App />
+                        <TokenProvider>
+                          <App />
+                        </TokenProvider>
                       </EachProvider>
                     </ChannelDataProvider>
                   </NavProvider>
