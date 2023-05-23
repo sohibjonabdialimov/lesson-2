@@ -1,6 +1,21 @@
 .sidebar {
   width: 19vw;
 }
+.side_main_navbar a{
+  background-color: #fff;
+  color: #333;
+}
+.side_main_navbar a.active{
+  color: #000;
+  font-weight: 600;
+  background-color: #f3f3f3;
+}
+.side_main_navbar a.active ion-icon{
+  color: #000;
+}
+.side_main_navbar a.active .side_nav{
+  background-color: #f3f3f3;
+}
 .sidebar_nav {
   overflow-y: scroll;
   max-height: calc(100vh - 66px);

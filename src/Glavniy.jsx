@@ -20,7 +20,7 @@ const Glavniy = () => {
             <div className={!nav ? "padding" : null}>
               <Info />
               <nav>
-                <NavLink to="/">Glavniy</NavLink>
+                <NavLink to="glavniy">Glavniy</NavLink>
                 <NavLink to="video">Video</NavLink>
                 <NavLink to="shorts">Shorts</NavLink>
                 <NavLink to="playlist">Playlist</NavLink>

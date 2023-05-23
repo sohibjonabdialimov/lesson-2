@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Navbar from "../../UI/Navbar/Navbar";
 import "./style.css";
 import { NavContext } from "../../context/NavContext";
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   const { nav } = useContext(NavContext);
 
@@ -11,19 +12,26 @@ const Sidebar = () => {
         <section className="sidebar">
           <div className="sidebar_nav">
             <div className="side_main_navbar">
-              <Navbar
-                img={<ion-icon name="home-outline"></ion-icon>}
-                text="Glavniy"
-              />
-              <Navbar
-                img={<ion-icon name="musical-notes-outline"></ion-icon>}
-                text="Shorts"
-              />
-              <Navbar
-                img={<ion-icon name="grid-outline"></ion-icon>}
-                text="Obunalar"
-              />
+              <NavLink to="/">
+                <Navbar
+                  img={<ion-icon name="home-outline"></ion-icon>}
+                  text="Glavniy"
+                />
+              </NavLink>
+              <NavLink to="/about">
+                <Navbar
+                  img={<ion-icon name="musical-notes-outline"></ion-icon>}
+                  text="Shorts"
+                />
+              </NavLink>
+              <NavLink to="/obunalar">
+                <Navbar
+                  img={<ion-icon name="grid-outline"></ion-icon>}
+                  text="Obunalar"
+                />
+              </NavLink>
             </div>
+
             <div className="side_main_navbar">
               <Navbar
                 img={<ion-icon name="newspaper-outline"></ion-icon>}

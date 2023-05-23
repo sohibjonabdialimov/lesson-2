@@ -13,7 +13,7 @@ const Button = ({ img, type }) => {
     if (type === "each") {
       setEach(false);
     } else if (type === "user") {
-      navigate("/glavniy");
+      navigate("/glavniy/glavniy");
     } else {
       setEach((prev) => true);
     }

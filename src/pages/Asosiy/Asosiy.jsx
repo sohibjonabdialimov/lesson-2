@@ -12,7 +12,7 @@ const Asosiy = () => {
         <div className="asosiy_cards">
           {trending.contents.map((item) => {
             return (
-              <Link to={`videolar/${item.video.videoId}`} key={v4()} className="asosiy_card">
+              <Link to={`/videolar/${item.video.videoId}`} key={v4()} className="asosiy_card">
                 <img src={item.video.thumbnails[2].url} alt="" />
                 <h4>
                   {item.video.title.length > 48

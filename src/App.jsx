@@ -9,13 +9,18 @@ import Kanal from "./pages/Kanal/Kanal";
 import KanalHaqida from "./pages/KanalHaqida/KanalHaqida";
 import EachVideo from "./pages/EachVideo/EachVideo";
 import Hero from "./pages/Hero/Hero";
+import About from "./pages/About/About";
+import Obunalar from "./pages/Obunalar/Obunalar";
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/glavniy" element={<Glavniy />}>
-          <Route index element={<Asosiy />} />
+        <Route path="about" element={<About />} />
+        <Route path="obunalar" element={<Obunalar />} />
+        <Route path="glavniy" element={<Glavniy />}>
+          {/* <Route index element={<Asosiy />} /> */}
+          <Route path="glavniy" element={<Asosiy />} />
           <Route path="video" element={<Video />} />
           <Route path="shorts" element={<Shorts />} />
           <Route path="playlist" element={<Playlist />} />
