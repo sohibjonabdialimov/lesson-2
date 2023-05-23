@@ -4,7 +4,7 @@ import { AboutChannelContext } from "../../context/Context";
 
 const KanalHaqida = () => {
   const aboutChannel = useContext(AboutChannelContext);
-  console.log("nima", aboutChannel);
+  // console.log("nima", aboutChannel);
   return (
     <>
       {aboutChannel && (

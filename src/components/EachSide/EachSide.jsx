@@ -3,13 +3,17 @@ import Navbar from "../../UI/Navbar/Navbar";
 import "./style.css";
 import { EachContext } from "../../context/NavContext";
 import Button from "../../UI/Button/Button";
+import { NavLink } from "react-router-dom";
 const EachSide = () => {
-  const { each } = useContext(EachContext);
+  const { each, setEach } = useContext(EachContext);
 
   return (
     <>
       {each && (
-        <section className={each ? "each_side clickedSide" : "each_side"}>
+        <section
+          onClick={() => setEach(false)}
+          className={each ? "each_side clickedSide" : "each_side"}
+        >
           <div className="each_side_nav">
             <div className="each_logo">
               <Button
@@ -23,24 +27,33 @@ const EachSide = () => {
             </div>
             <div className="side_wrap">
               <div className="each_side_main_navbar">
-                <Navbar
-                  img={<ion-icon name="home-outline"></ion-icon>}
-                  text="Glavniy"
-                />
-                <Navbar
-                  img={<ion-icon name="musical-notes-outline"></ion-icon>}
-                  text="Shorts"
-                />
-                <Navbar
-                  img={<ion-icon name="grid-outline"></ion-icon>}
-                  text="Obunalar"
-                />
+                <NavLink to="/" onClick={() => setEach(false)}>
+                  <Navbar
+                    img={<ion-icon name="home-outline"></ion-icon>}
+                    text="Glavniy"
+                  />
+                </NavLink>
+                <NavLink to="/about" onClick={() => setEach(false)}>
+                  <Navbar
+                    img={<ion-icon name="musical-notes-outline"></ion-icon>}
+                    text="Shorts"
+                  />
+                </NavLink>
+                <NavLink to="/obunalar" onClick={() => setEach(false)}>
+                  <Navbar
+                    img={<ion-icon name="grid-outline"></ion-icon>}
+                    text="Obunalar"
+                  />
+                </NavLink>
               </div>
               <div className="side_main_navbar">
-                <Navbar
-                  img={<ion-icon name="newspaper-outline"></ion-icon>}
-                  text="Kutubxona"
-                />
+                <NavLink to="/kutubxona" onClick={() => setEach(false)}>
+                  <Navbar
+                    img={<ion-icon name="newspaper-outline"></ion-icon>}
+                    text="Kutubxona"
+                  />
+                </NavLink>
+
                 <Navbar
                   img={<ion-icon name="pencil-outline"></ion-icon>}
                   text="Tarix"

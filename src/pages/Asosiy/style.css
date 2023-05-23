@@ -6,23 +6,26 @@
   color: #666;
   padding-bottom: 50px;
 }
-.asosiy_card img{
+.asosiy_cards a{
+  color: #666;
+}
+a.asosiy_card img{
   width: 100%;
   border-radius: 10px;
   height: 120px;
 }
-.asosiy_card {
+a.asosiy_card {
   position: relative;
   cursor: pointer;
 }
-.asosiy_card h4{
+a.asosiy_card h4{
   font-size: 14px;
   color: #000;
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 10px;
 }
-.asosiy_card p{
+a.asosiy_card p{
   font-size: 14px;
   margin-bottom: 5px;
 }

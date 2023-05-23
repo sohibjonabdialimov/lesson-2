@@ -33,10 +33,13 @@ const Sidebar = () => {
             </div>
 
             <div className="side_main_navbar">
-              <Navbar
-                img={<ion-icon name="newspaper-outline"></ion-icon>}
-                text="Kutubxona"
-              />
+              <NavLink to="/kutubxona">
+                <Navbar
+                  img={<ion-icon name="newspaper-outline"></ion-icon>}
+                  text="Kutubxona"
+                />
+              </NavLink>
+
               <Navbar
                 img={<ion-icon name="pencil-outline"></ion-icon>}
                 text="Tarix"
@@ -118,22 +121,30 @@ const Sidebar = () => {
         </section>
       ) : (
         <div className="small_nav">
-          <div className="small_nav_item">
-            <ion-icon name="home-outline"></ion-icon>
-            <p>Glavniy</p>
-          </div>
-          <div className="small_nav_item">
-            <ion-icon name="musical-notes-outline"></ion-icon>
-            <p>Shorts</p>
-          </div>
-          <div className="small_nav_item">
-            <ion-icon name="grid-outline"></ion-icon>
-            <p>Obunalar</p>
-          </div>
-          <div className="small_nav_item">
-            <ion-icon name="newspaper-outline"></ion-icon>
-            <p>Kutubxona</p>
-          </div>
+          <NavLink to="/">
+            <div className="small_nav_item">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Glavniy</p>
+            </div>
+          </NavLink>
+          <NavLink to="/about">
+            <div className="small_nav_item">
+              <ion-icon name="musical-notes-outline"></ion-icon>
+              <p>Shorts</p>
+            </div>
+          </NavLink>
+          <NavLink to="/obunalar">
+            <div className="small_nav_item">
+              <ion-icon name="grid-outline"></ion-icon>
+              <p>Obunalar</p>
+            </div>
+          </NavLink>
+          <NavLink to="/kutubxona">
+            <div className="small_nav_item">
+              <ion-icon name="newspaper-outline"></ion-icon>
+              <p>Kutubxona</p>
+            </div>
+          </NavLink>
         </div>
       )}
     </>

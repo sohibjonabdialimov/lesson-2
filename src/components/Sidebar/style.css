@@ -72,4 +72,12 @@
   font-size: 19px;
   font-weight: 500;
 }
-
+.small_nav a{
+  color: #333;
+}
+.small_nav a.active{
+  color: #000;
+}
+.small_nav a.active .small_nav_item{
+  background-color: #e9e9e9;
+}
