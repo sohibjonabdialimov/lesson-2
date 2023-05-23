@@ -30,7 +30,7 @@ const Header = () => {
             <div className="user">
               <Button img={<ion-icon name="videocam-outline"></ion-icon>} />
               <Button img={<ion-icon name="briefcase-outline"></ion-icon>} />
-              <Button img={<ion-icon name="person-add-outline"></ion-icon>} />
+              <Button type={"user"} img={<ion-icon name="person-add-outline"></ion-icon>} />
             </div>
           </div>
         </div>

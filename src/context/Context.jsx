@@ -27,7 +27,7 @@ export const AboutChannelProvider = ({ children }) => {
         setAboutChannel(res);
       });
   }, []);
-  // console.log("About channel", aboutChannel.data);
+  console.log("About channel", aboutChannel.data);
   return (
     <AboutChannelContext.Provider value={aboutChannel.data}>
       {children}
@@ -114,7 +114,7 @@ export const TrendingProvider = ({ children }) => {
         setTrending(res);
       });
   }, []);
-  // console.log("Trending", trending.data);
+  console.log("Trending", trending.data);
   return (
     <TrendingContext.Provider value={trending.data}>
       {children}
